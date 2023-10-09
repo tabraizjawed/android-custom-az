@@ -46,7 +46,7 @@ class ProductsViewModel(
                 databaseHelper.insertAll(listToAdd)
 
             } catch (ex: Exception) {
-                if (ex.message!!.contains("Unable to resolve host")) {
+                if (ex.message!!.contains("Unable to resolve host")||ex.message!!.contains("failed to connect")) {
                     val returnList = mutableListOf<Product>()
                     databaseHelper.getProducts().map {
                         var product = Product(

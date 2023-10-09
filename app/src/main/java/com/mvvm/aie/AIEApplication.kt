@@ -13,7 +13,7 @@ class AIEApplication : Application() {
 
     override fun onCreate() {
         super.onCreate()
-        var retrofit = Retrofit.Builder()
+        val retrofit = Retrofit.Builder()
             .baseUrl("https://fakestoreapi.com/")
             .addConverterFactory(GsonConverterFactory.create())
             .build()

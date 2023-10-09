@@ -59,6 +59,7 @@ dependencies {
 
     //Glide Image loading lib
     implementation ("com.github.bumptech.glide:glide:4.12.0")
+    implementation("androidx.test:core-ktx:1.5.0")
 
     //RoomDB
 
